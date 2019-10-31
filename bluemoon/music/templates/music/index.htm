@@ -5,7 +5,7 @@
         text-shadow: 0 0 7px rgb(58, 58, 58), 0 0 15px rgb(56, 56, 56);
         font-family: 'Staatliches', cursive;
         color: rgb(250, 250, 250);
-        font-size: 2vw;
+        font-size: 3vw;
 
     }
 
@@ -13,13 +13,20 @@
         text-shadow: 0 0 7px rgb(58, 58, 58), 0 0 15px rgb(56, 56, 56);
         font-family: 'Staatliches', cursive;
         color: rgb(250, 250, 250);
-        font-size: 1vw;
+        font-size: 2vw;
     }
 
     .cardback {
         background: rgb(49, 49, 49);
 
     }
+    .cardbut {
+        background: rgb(19, 19, 19);
+        border-color:rgb(69, 69, 69) ;
+
+    }
+
+
 </style>
 
 <div style="background:rgb(49, 49, 49); padding-top:78.5px;">
@@ -31,12 +38,14 @@
 
     <div class="card flex-row flex-wrap cardback">
         <div class="card-header border-0 cardback ">
-            <img src="{{muse.albumart.url}}" height="250vw" width="250vw" alt="">
+            <img src="{{muse.albumart.url}}"  class="img-thumbnail" style="max-height:20vw;  height:100%; width:auto;"  alt="">
         </div>
         <div class="card-block px-2 cardback">
             <h4 class="card-title head"><br>{{muse.artistname}} - {{muse.name}} </h4>
             <p class="card-text tex">{{muse.albumname}}<br>{{muse.description}}</p>
-            <a href="{{muse.link}}" class="btn btn-primary">Listen</a>
+            <a href="{{muse.link}}" class="btn btn-primary  cardbut tex" style="max-height:5vw; ">Listen</a>
+            <br><br>
+
         </div>
         <div class="w-100"></div>
 

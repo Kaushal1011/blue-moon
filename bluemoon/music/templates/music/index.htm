@@ -1,28 +1,47 @@
 {% extends 'music/base.htm' %}
 {% block content %}
-<div style="background:rgb(49, 49, 49);">
-    <p style="font-family: 'Staatliches', cursive; color:rgb(243, 69, 69); padding-top: 60px;font-size:150px;">
-        Hello! You're At Music.
+<style>
+    .head {
+        text-shadow: 0 0 7px rgb(58, 58, 58), 0 0 15px rgb(56, 56, 56);
+        font-family: 'Staatliches', cursive;
+        color: rgb(250, 250, 250);
+        font-size: 2vw;
+
+    }
+
+    .tex {
+        text-shadow: 0 0 7px rgb(58, 58, 58), 0 0 15px rgb(56, 56, 56);
+        font-family: 'Staatliches', cursive;
+        color: rgb(250, 250, 250);
+        font-size: 1vw;
+    }
+
+    .cardback {
+        background: rgb(49, 49, 49);
+
+    }
+</style>
+
+<div style="background:rgb(49, 49, 49); padding-top:78.5px;">
+    <p style="font-family: 'Staatliches', cursive; color:rgb(243, 69,69);font-size:75px;">
+        Enjoy My Music
     </p>
-    <p style="font-family: 'Staatliches', cursive; color:rgb(174, 120, 241);font-size:75px;">
-        I hope you enjoy. <br> - Kaushal Patil
-    </p>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+
+    {% for muse in music %}
+
+    <div class="card flex-row flex-wrap cardback">
+        <div class="card-header border-0 cardback ">
+            <img src="{{muse.albumart.url}}" height="250vw" width="250vw" alt="">
+        </div>
+        <div class="card-block px-2 cardback">
+            <h4 class="card-title head"><br>{{muse.artistname}} - {{muse.name}} </h4>
+            <p class="card-text tex">{{muse.albumname}}<br>{{muse.description}}</p>
+            <a href="{{muse.link}}" class="btn btn-primary">Listen</a>
+        </div>
+        <div class="w-100"></div>
+
+    </div>
+    {% endfor %}
 </div>
 
 

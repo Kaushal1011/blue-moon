@@ -28,6 +28,30 @@
         .navbar-custom .navbar-text {
             color: rgb(255, 85, 85);
         }
+        .navbar {
+            min-height: 40px;
+          }
+
+          .navbar-brand {
+            padding: 0 10px;
+            height: 40px;
+            line-height: 40px;
+          }
+
+          .navbar-toggle {
+            /* (80px - button height 34px) / 2 = 23px */
+            margin-top: 23px;
+            padding: 9px 10px !important;
+          }
+
+          @media (min-width: 768px) {
+            .navbar-nav > li > a {
+              /* (80px - line-height of 27px) / 2 = 26.5px */
+              padding-top: 17.5px;
+              padding-bottom: 17.5px;
+              line-height: 17px;
+            }
+          }
     </style>
 </head>
 

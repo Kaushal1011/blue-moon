@@ -28,30 +28,31 @@
         .navbar-custom .navbar-text {
             color: rgb(255, 85, 85);
         }
+
         .navbar {
             min-height: 40px;
-          }
+        }
 
-          .navbar-brand {
+        .navbar-brand {
             padding: 0 10px;
             height: 40px;
             line-height: 40px;
-          }
+        }
 
-          .navbar-toggle {
+        .navbar-toggle {
             /* (80px - button height 34px) / 2 = 23px */
             margin-top: 23px;
             padding: 9px 10px !important;
-          }
+        }
 
-          @media (min-width: 768px) {
-            .navbar-nav > li > a {
-              /* (80px - line-height of 27px) / 2 = 26.5px */
-              padding-top: 17.5px;
-              padding-bottom: 17.5px;
-              line-height: 17px;
+        @media (min-width: 768px) {
+            .navbar-nav>li>a {
+                /* (80px - line-height of 27px) / 2 = 26.5px */
+                padding-top: 17.5px;
+                padding-bottom: 17.5px;
+                line-height: 17px;
             }
-          }
+        }
     </style>
 </head>
 
@@ -62,10 +63,9 @@
 
     <nav class="navbar navbar-expand-md navbar-custom fixed-top ">
         <a class="navbar-brand" href="#" style="font-family: 'Staatliches', cursive;">BlueMoon</a>
-        <button class="navbar-toggler"  type="button" data-toggle="collapse"
-            data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false"
-            aria-label="Toggle navigation">
-           <img src="../static/images/wdown.png"  width="25" height="25" alt=""/>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+            aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <img src="../static/images/wdown.png" width="25" height="25" alt="" />
         </button>
 
         <div class="collapse navbar-collapse" id="navbarsExampleDefault">
@@ -96,6 +96,44 @@
 
 
     {% endblock %}
+
+
+    <!-- Footer -->
+    <footer class="page-footer font-small tex" style="background: rgb(26, 26, 26);">
+
+        <!-- Footer Elements -->
+        <div class="container text-center center-block">
+
+
+
+
+            <a href="https://www.instagram.com/kau5hal10/">
+                <img src="https://i.pinimg.com/originals/ff/0e/20/ff0e20de4718fe14cdd256c81c5db771.png"
+                    style="height: 50px;width: auto; padding-right: 6vw; padding-top:20px">
+            </a>
+            <a href="https://github.com/Kaushal1011">
+                <img src="https://www.sferalabs.cc/wp-content/uploads/github-logo-white.png"
+                    style="height: 50px;width: auto; padding-right: 6vw; padding-top:20px">
+            </a>
+            <a href="mailto:kaushalpatil10@gmail.com">
+                <img src="https://cdn4.iconfinder.com/data/icons/free-colorful-icons/360/gmail.png"
+                    style="height: 50px;width: auto;  padding-top:20px">
+            </a>
+
+
+
+
+        </div>
+        <!-- Footer Elements -->
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2019 Copyright:
+            <a href="https://github.com/Kaushal1011"> Designed and Developed By: Kaushal Patil</a>
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"

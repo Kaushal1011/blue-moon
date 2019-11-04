@@ -3,6 +3,9 @@
 {% block content %}
 
 <style>
+    body{
+        background:rgb(49, 49, 49);
+    }
     .head {
         text-shadow: 0 0 7px rgb(58, 58, 58), 0 0 15px rgb(56, 56, 56);
         font-family: 'Staatliches', cursive;
@@ -17,6 +20,19 @@
         color: rgb(250, 250, 250);
         font-size: 6vw
     }
+    .bd{
+        height: 70%;
+        width : 100%;
+    }
+    .carousel-caption{
+        top:30%;
+    }
+    .img{
+        filter:opacity(0.69);
+    }
+    .img-grey{
+        filter:grayscale(0.4);
+    }
 </style>
 
 <div style="background:rgb(49, 49, 49);">
@@ -30,7 +46,7 @@
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <a href="{% url 'Programming' %}">
-                    <img src="static/images/prog.jpg" class="d-block w-100 " alt="...">
+                    <img src="static/images/prog.jpg" class="d-block w-100 img img-grey" alt="...">
 
                     <div class="carousel-caption ">
                         <h3 class="head">
@@ -42,7 +58,7 @@
                 </div>
                 <div class="carousel-item">
                     <a href="{% url 'Music' %}">
-                    <img src="static/images/music.jpg" class="d-block w-100 " alt="...">
+                    <img src="static/images/music.jpg" class="d-block w-100 img" alt="...">
 
                     <div class="carousel-caption ">
                         <h3 class="head">
@@ -54,7 +70,7 @@
                 </div>
                 <div class="carousel-item">
                     <a href="{% url 'Design' %}">
-                    <img src="static/images/des.jpg" class="d-block w-100" alt="...">
+                    <img src="static/images/des.jpg" class="d-block w-100 img" alt="...">
 
                     <div class="carousel-caption ">
                         <h3 class="head">
@@ -79,11 +95,12 @@
 
 
 
-    <p style="font-family: 'Staatliches', cursive; color:rgb(243, 69, 69); padding-top: 10px;font-size:150px;">
+    <p style="font-family: 'Staatliches', cursive; color:rgb(243, 69, 69);padding-left:4%; padding-top: 10px;font-size:150px;">
         Hello! You're At Blue Moon.
     </p>
-    <p style="font-family: 'Staatliches', cursive; color:rgb(174, 120, 241);font-size:75px;">
+    <p style="font-family: 'Staatliches', cursive; color:rgb(174, 120, 241);font-size:50px;padding-left:6%">
         I hope you enjoy. <br> - Kaushal Patil
+
     </p>
     <br>
     <br>

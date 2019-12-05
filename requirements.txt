@@ -1,5 +1,5 @@
 astroid==2.3.2
-Django==2.2.6
+Django==2.2.8
 isort==4.3.21
 lazy-object-proxy==1.4.3
 mccabe==0.6.1

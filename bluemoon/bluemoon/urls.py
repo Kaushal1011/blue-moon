@@ -25,6 +25,7 @@ from . import settings
 urlpatterns = [
     path('', include('home.urls')),
     path('music/', include('music.urls')),
+    path('programming/', include('programming.urls')),
     path('admin/', admin.site.urls),
     url(r'^markdownx/', include(markdownx))
 ]

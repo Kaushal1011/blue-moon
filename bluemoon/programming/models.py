@@ -10,3 +10,4 @@ class Post(models.Model):
     author = models.CharField(max_length=400)
     projectgraphic = models.ImageField(upload_to="gallery")
     link = models.CharField(max_length=255)
+    description = models.CharField(max_length=255)

@@ -1,9 +1,9 @@
 from django.shortcuts import render
-from programming.models import Post
+from music.models import Music
 # Create your views here.
 
 
 def index(request):
-    postlist = Post.objects.all()
-    context = {'post': postlist}
-    return render(request, 'programming/index.htm', context)
+    musiclist = Music.objects.all()
+    context = {'music': musiclist}
+    return render(request, 'music/index.htm', context)

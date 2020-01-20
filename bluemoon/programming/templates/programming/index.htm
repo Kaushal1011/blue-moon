@@ -1,4 +1,4 @@
-{% extends 'music/base.htm' %}
+{% extends 'programming/base.htm' %}
 {% block content %}
 <style>
     .head {
@@ -20,30 +20,29 @@
         background: rgb(49, 49, 49);
 
     }
+
     .cardbut {
         background: rgb(19, 19, 19);
-        border-color:rgb(69, 69, 69) ;
+        border-color: rgb(69, 69, 69);
 
     }
-
-
 </style>
 
 <div style="background:rgb(49, 49, 49); padding-top:78.5px;">
     <p style="font-family: 'Staatliches', cursive; color:rgb(243, 69,69);font-size:75px;">
-        Enjoy My Music
+        Projects in Programming
     </p>
 
-    {% for muse in music %}
+    {% for pos in post %}
 
     <div class="card flex-row flex-wrap cardback">
         <div class="card-header border-0 cardback ">
-            <img src="{{muse.albumart.url}}"  class="img-thumbnail" style="max-height:30vw;  height:100%; "  alt="">
+            <img src="{{pos.projectgraphic.url}}" class="img-thumbnail" style="max-height:30vw;  height:100%; " alt="">
         </div>
         <div class="card-block px-2 cardback">
-            <h4 class="card-title head"><br>{{muse.artistname}} - {{muse.name}} </h4>
-            <p class="card-text tex">{{muse.albumname}}<br>{{muse.description}}</p>
-            <a href="{{muse.link}}" class="btn btn-primary  cardbut tex" style="max-height:5vw; ">Listen</a>
+            <h4 class="card-title head"><br>{{pos.title}} </h4>
+            <p class="card-text tex">{{pos.author}}<br>{{pos.description}}</p>
+            <a href="/" class="btn btn-primary  cardbut tex" style="max-height:5vw; ">Read More</a>
             <br><br>
 
         </div>

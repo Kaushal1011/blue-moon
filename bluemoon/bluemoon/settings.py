@@ -41,6 +41,9 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'home',
     'music',
+    'markdownx',
+    'design',
+    'programming',
 ]
 
 MIDDLEWARE = [

@@ -42,7 +42,7 @@
         <div class="card-block px-2 cardback">
             <h4 class="card-title head"><br>{{pos.title}} </h4>
             <p class="card-text tex">{{pos.author}}<br>{{pos.description}}</p>
-            <a href="/" class="btn btn-primary  cardbut tex" style="max-height:5vw; ">Read More</a>
+            <a href="{% url 'detail' pos.title %}" class="btn btn-primary  cardbut tex" style="max-height:5vw; ">Read More</a>
             <br><br>
 
         </div>

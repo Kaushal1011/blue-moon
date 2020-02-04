@@ -11,8 +11,9 @@ def index(request):
 
 
 def readmore(request, title):
+    print(title)
     try:
-        p = Post.objects.get(title=title)
-    except Post.DoesNotExist:
+        post = Post.objects.filter(title=title)[0]
+    except post.DoesNotExist:
         raise Http404("Post does not exist")
-    return render(request, 'programming/detail.htm', {'Post': p})
+    return render(request, 'programming/detail.htm', {'post': post})

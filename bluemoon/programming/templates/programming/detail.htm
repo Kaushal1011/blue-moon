@@ -28,10 +28,13 @@
     }
 </style>
 
-<form method="POST" action="">{% csrf_token %}
-    {{ form }}
-</form>
+<div style="background:rgb(49, 49, 49); padding-top:78.5px;">
+    <p style="font-family: 'Staatliches', cursive; color:rgb(243, 69,69);font-size:75px;">
+        {{post.title}}
+    </p>
+    <div style="font-family: 'Staatliches', cursive; color:rgb(243, 69,69);">
+        {{post.formatted_markdown|safe}}
+    </div>
 
-{{ form.media }}
 
 {% endblock %}
